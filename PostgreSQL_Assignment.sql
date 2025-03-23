@@ -3,8 +3,8 @@
 -- Create books table
 CREATE TABLE books (
     id SERIAL PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    author VARCHAR(255) NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    author VARCHAR(50) NOT NULL,
     price DECIMAL(10,2) CHECK (price >= 0),
     stock INT NOT NULL,
     published_year INT NOT NULL
@@ -14,8 +14,8 @@ CREATE TABLE books (
 -- Create customers table
 CREATE TABLE customers (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) UNIQUE NOT NULL,
     joined_date DATE DEFAULT CURRENT_DATE
 );
 
