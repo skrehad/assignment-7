@@ -36,7 +36,11 @@ INSERT INTO books (title, author, price, stock, published_year) VALUES
 ('Clean Code', 'Robert C. Martin', 35.00, 5, 2008),
 ('You Do not Know JS', 'Kyle Simpson', 30.00, 8, 2014),
 ('Refactoring', 'Martin Fowler', 50.00, 3, 1999),
-('Database Design Principles', 'Jane Smith', 20.00, 0, 2018);
+('Database Design Principles', 'Jane Smith', 20.00, 0, 2018),
+('Eloquent JavaScript', 'Saiful', 45.00, 7, 2018),
+('The Art of Computer Programming', 'Donald Knuth', 100.00, 0, 1968),
+('Design Patterns', 'Erich Gamma', 55.00, 5, 1994),
+('JavaScript: The Good Parts', 'Rehad', 38.00, 6, 2008);
 
 -- SELECT * FROM books
 
@@ -47,9 +51,14 @@ INSERT INTO books (title, author, price, stock, published_year) VALUES
 INSERT INTO customers (name, email, joined_date) VALUES
 ('Alice', 'alice@email.com', '2023-01-10'),
 ('Bob', 'bob@email.com', '2022-05-15'),
-('Charlie', 'charlie@email.com', '2023-06-20');
+('Charlie', 'charlie@email.com', '2023-06-20'),
+('David', 'david@email.com', '2023-08-12'),
+('Emma', 'emma@email.com', '2022-11-22'),
+('Frank', 'frank@email.com', '2023-04-30');
 
 -- SELECT * FROM customers
+
+
 
 
 
@@ -57,7 +66,11 @@ INSERT INTO customers (name, email, joined_date) VALUES
 INSERT INTO orders (customer_id, book_id, quantity, order_date) VALUES
 (1, 2, 1, '2024-03-10'),
 (2, 1, 1, '2024-02-20'),
-(1, 3, 2, '2024-03-05');
+(1, 3, 2, '2024-03-05'),
+(3, 2, 1, '2024-01-15'),
+(4, 5, 2, '2024-02-10'),
+(2, 4, 3, '2024-03-18'),
+(5, 1, 1, '2024-04-05');
 
 -- SELECT * FROM orders
 
